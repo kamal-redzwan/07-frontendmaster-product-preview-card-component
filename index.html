@@ -24,16 +24,23 @@
   </head>
   <body>
     <main class="card">
-      <img
-        class="image-mobile"
-        src="./images/image-product-mobile.jpg"
-        alt="perfume on a flat surface"
-      />
-      <img
-        class="image-desktop"
-        src="./images/image-product-desktop.jpg"
-        alt="perfume on a flat surface"
-      />
+      <picture>
+        <source
+          srcset="images/image-product-mobile.jpg"
+          media="(max-width: 425px)"
+        />
+
+        <source
+          srcset="images/image-product-desktop.jpg"
+          media="(min-width: 426px)"
+        />
+
+        <img
+          class="image"
+          src="images/image-product-mobile.jpg"
+          alt="image of perfume"
+        />
+      </picture>
       <div class="details">
         <p class="category">Perfume</p>
         <h1 class="title">Gabrielle Essence Eau De Parfum</h1>

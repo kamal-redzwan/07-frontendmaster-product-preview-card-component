@@ -55,11 +55,7 @@ body {
   max-width: 21.4375rem;
 }
 
-.card .image-desktop {
-  display: none;
-}
-
-.card .image-mobile {
+.card .image {
   border-radius: var(--card-radius) var(--card-radius) 0 0;
 }
 
@@ -134,14 +130,7 @@ button {
     max-width: 37.5rem;
   }
 
-  .card .image-mobile {
-    display: none;
-  }
-
-  .card .image-desktop {
-    display: block;
-    height: 100%;
-
+  .card .image {
     border-radius: var(--card-radius) 0 0 var(--card-radius);
   }
 
